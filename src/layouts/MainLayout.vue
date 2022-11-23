@@ -2,6 +2,10 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
+
+
+        <q-toolbar-title> Quasar App </q-toolbar-title>
+
         <q-btn
           flat
           dense
@@ -10,14 +14,10 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-
-        <q-toolbar-title> Quasar App </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+    <q-drawer v-model="leftDrawerOpen" show-if-above bordered side="right">
       <q-list>
         <q-item-label header> Essential Links </q-item-label>
 
