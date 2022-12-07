@@ -2,7 +2,7 @@
   <q-page class="flex flex-center">
     <img
       alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
+      src="~assets/cat_ewaste_icon.svg"
       style="width: 200px; height: 200px"
     />
     <q-page-sticky position="bottom-right" :offset="[18, 18]">

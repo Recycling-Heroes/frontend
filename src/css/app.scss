@@ -1,1 +1,13 @@
 // app global css in SCSS form
+@import "fonts/NotoSansJP.css";
+
+// declare a class which applies it
+* {
+  font-family: 'Noto-Sans-JP', sans-serif;
+  font-weight: 400;
+}
+
+.title {
+  font-family: 'Noto-Sans-JP', sans-serif;
+  font-weight: 500;
+}
