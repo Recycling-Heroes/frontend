@@ -1,10 +1,10 @@
 #Gradle Build
 FROM node:19-alpine AS builder
-COPY package.json /app/
-COPY src /app/src
 WORKDIR /app
-RUN npm install -g @quasar/cli
-RUN npm install
+COPY package.json ./
+RUN yarn global add @quasar/cli
+COPY . .
+RUN yarn
 RUN quasar build
 
 #Run
