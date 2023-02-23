@@ -16,7 +16,6 @@
         >
           <q-popup-proxy>
             <q-banner>
-              You have lost connection to the internet. This app is offline.
               <q-btn outline rounded color="negative" label="Abmelden" class="abmelden"
                      :to="{ path: '/pages/Error404' }"/>
             </q-banner>
