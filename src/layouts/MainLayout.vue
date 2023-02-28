@@ -1,4 +1,7 @@
 <template>
+  <div class="everything">
+
+
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
@@ -16,8 +19,7 @@
         >
           <q-popup-proxy>
             <q-banner>
-              <q-btn outline rounded color="negative" label="Abmelden" class="abmelden"
-                     :to="{ path: '/pages/Error404' }"/>
+                <q-btn outline rounded color="negative" label="Abmelden" class="abmelden" to="/login"></q-btn>
             </q-banner>
           </q-popup-proxy>
         </q-btn>
@@ -25,10 +27,11 @@
     </q-header>
 
 
-    <q-page-container>
+    <q-page-container class="content-container">
       <router-view/>
     </q-page-container>
   </q-layout>
+  </div>
 </template>
 
 <script>
